@@ -1,51 +1,110 @@
 import React, { useState } from "react";
+import { validateEmail } from "../utils/helpers";
 
 function ContactUs() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  
+  const [email, setEmail] = useState('');
+  const [sender, setSender] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log("Name: ", name);
-    console.log("Email: ", email);
-    console.log("Message: ", message);
-    setName('');
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+    console.log({inputType, inputValue});
+
+    
+    if (inputType === 'sender') {
+      setSender(inputValue);
+    } else if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'message') {
+      setMessage(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    if (!validateEmail(email) || !sender) {
+      setErrorMessage('Email or Name is invalid');
+      return;
+    }
+    setSender('');
     setEmail('');
     setMessage('');
-  }
+    setErrorMessage('');
+    alert(`Thankyou ${sender}, for your message.`)
+  };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
+    <section className='container-fluid contact'>
+      <h2 id="contact-title">Contact Us</h2>
+      <div className='row contact-row' data-contact="hide">
+        <form
+        action='mailto:'
+        method='POST'
+        encType='multipart/form-data'
+        id='contact-form'
+        >
+          <div className='form-group'>
+            <label htmlFor='name'>Name</label>
+            <input
+            value={sender}
+            type="text"
+            className='form-control'
+            name="name"
+            onChange={handleInputChange}
+            id="full-name"
+            placeholder='Name'
+            required
+            />
+            
+            </div>
+            <div className='form-group'>
+              <label htmlFor="email">Email:</label>
+              <input
+              value={email}
+              type="email"
+              className='form-control'
+              name='email'
+              onChange={handleInputChange}
+              id="email"
+              placeholder='Email'
+              required
+              />
+          </div>
+          <div className='form-group'>
+          <label htmlFor="message">Message:</label>
+              <textarea
+              value={message}
+              className='form-control'
+              name='message'
+              onChange={handleInputChange}
+              id="message"
+              placeholder='Please Send Us a Message'
+              rows="4"
+              cols=""
+              required
+              ></textarea>
+          </div>
+          <button type='submit'
+           id="email-btn"
+           className='subBtn'
+           onClick={handleFormSubmit}
+           >submit</button>
+        </form>
+        {errorMessage && (
+          <div>
+            <p className='error-text'>{errorMessage}</p>
+            </div>
+        )}
       </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-      </div>
-      <button type="submit">Send</button>
-    </form>
-  );
+      </section>
+  )
+   
+  
 }
 
 export default ContactUs;
