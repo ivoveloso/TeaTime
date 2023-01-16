@@ -2,7 +2,7 @@
   {
     "name": "Matcha",
     "Description": " Matcha is finely ground powder of specially grown and processed green tea leaves, traditionally consumed in East Asia. The green tea plants used for matcha are shade-grown for three to four weeks before harvest; the stems and veins are removed during processing",
-    "image": "",
+    "image": "macha.jpg",
     "category": "Traditonal",
     "price":"9.99 per 10g",
     "inventory":""
@@ -10,7 +10,7 @@
   {
     "name": "The Red Silk Cloak (Da Hong Pao)",
     "Description": "The Red Silk Cloak (Da Hong Pao) has a unique orchid fragrance and a long-lasting sweet aftertaste. Dry Da Hong Pao has a shape like tightly knotted ropes or slightly twisted strips, and is green and brown in color. After brewing, the tea is orange-yellow, bright and clear. Da Hong Pao can retain its flavor for nine steepings",
-    "image": "",
+    "image": "dahongpao.jpg",
     "category": "Traditonal",
     "price":"30 per 10g",
     "inventory":""
@@ -18,7 +18,7 @@
   {
     "name": "Jasmine Grande",
     "Description": " Jasmine Grande is tea scented with the aroma of jasmine blossoms. Typically, jasmine tea has green tea as the tea base; however, white tea and black tea are also used. The resulting flavour of jasmine tea is subtly sweet and highly fragrant. It is the most famous scented tea in China.",
-    "image": "",
+    "image": "chinagreentea.jpg",
     "category": "Traditonal",
     "price":"6.99 per 10g",
     "inventory":""
@@ -26,7 +26,7 @@
   {
     "name": "Jasmine Pearls",
     "Description": "Jasmine Pearls is a famous premium jasmine green tea from Fujian Provice in China. Young leaves are rolled into pearls and are scented with fresh jasmine blossom. This tea produces a refreshingly fragrant, sweet and floral liquor that is highly addictive!",
-    "image": "",
+    "image": "jaspearls",
     "category": "Traditonal",
     "price":"15 per 10g",
     "inventory":""
@@ -34,7 +34,7 @@
   {
     "name": "Sencha",
     "Description": " Sencha is a type of Japanese ryokucha (green tea) which is prepared by infusing the processed whole tea leaves in hot water. This is as opposed to matcha (抹茶), powdered Japanese green tea, where the green tea powder is mixed with hot water and therefore the leaf itself is included in the beverage. Sencha is the most popular tea in Japan.",
-    "image": "",
+    "image": "sencha.jpg",
     "category": "Traditonal",
     "price":"8.99 per 10g",
     "inventory":""
@@ -42,7 +42,7 @@
   {
     "name": "The Iron Goddess (Tie Guan Yin)",
     "Description": "Tie Guan Yin is a popular type of oolong tea that originated in the 19th century in Anxi in Fujian province. Tieguanyin produced in different areas of Anxi have different gastronomic characteristics. Tie Guan Yin can also be roasted, adding to its complexity",
-    "image": "",
+    "image": "irongod",
     "category": "Traditional",
     "price":"18 per 10g",
     "inventory":""
@@ -50,7 +50,7 @@
   {
     "name": "Premium Oolong Tea",
     "Description": "Oolong tea is made from the Camellia sinensis plant. Its dried leaves and leaf buds are used to make several different teas, including black and green teas. Oolong tea is fermented for longer than green tea, but less than black tea. It contains caffeine which affects thinking and alertness.",
-    "image": "",
+    "image": "oolong-tea.jpg",
     "category": "Traditonal",
     "price":"9 per 10g",
     "inventory":""
@@ -58,33 +58,33 @@
   {
     "name": "Rose Rendezvous",
     "Description": "By brewing the elixir of Love, a night in with these  delicate Rosebuds will be a perfect time for yourself  or your loved ones.  Sometimes, this is all you need to enjoy a time of  self-love in care.  ",
-    "image": "",
+    "image": "rose-tea.jpg",
     "category": "Modernised Classic",
-    "price":"",
+    "price":"15.99 per 10g",
     "inventory":""
   },
   {
     "name": "The Chrysanthemum samurai",
-    "Description": "",
-    "image": "",
+    "Description": "This floral collection was inspired by the Book “The Chrysanthemum & the Sword” by Ruth Benedict back  in 1946. This floral scent was captured at its finest moments as  a clean cut in constant Reflection, as an honourable Samurai would be, by using water as their mirror.  The origin of this offering resides in Hang Zhou  Province, Southern-part of China.",
+    "image": "samurai.jpg",
     "category": "Modernised Classic",
-    "price":"",
+    "price":"18.99 per 10g",
     "inventory":""
   },
   {
     "name": "Lavender Dream",
     "Description": "Feeling Exhausted? Perhaps try our newest collections of Seasonal Lavender ethically sourced from our local Lavender  farm in December 2022. The medicinal benefits of lavender not only promote  pure relaxation.  But rather a Time of Luxury for you as you relax.",
-    "image": "",
+    "image": "lavender.jpg",
     "category": "Modernised Classic",
-    "price":"",
+    "price":"10.99 per 10g",
     "inventory":""
   },
   {
     "name": "Osmanthus Delight (Sweet Tea Olives)",
     "Description": "The fragrant Osmanthus shines in its best-cherished form collected between late Summer to  Mid-Autumn each year when the Osmanthus trees   bloom in Gold.  Eventually, it becomes a celebration as you brew  into the Signature scent of Hangzhou, China.",
-    "image": "",
+    "image": "summer.jpg",
     "category": "Modernised Classic",
-    "price":"",
+    "price":"11.99 per 10g",
     "inventory":""
   }
 ]
