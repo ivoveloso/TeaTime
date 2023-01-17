@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs'; 
 //NOTE: Login page not showing properly.  
 import ProductCategoryMain from './pages/ProductCategoryMain.js'; 
+import ModernTea from './pages/ModernTea.js';
 import Matchup from './pages/Matchup';
 import Vote from './pages/Vote';
 import NotFound from './pages/NotFound';
@@ -34,6 +35,10 @@ function App() {
               <Route
               path="/productmain"
               element={<ProductCategoryMain />}
+            />
+              <Route
+              path="/moderntea"
+              element={<ModernTea />}
             />
             <Route
               path="/matchup"
