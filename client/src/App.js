@@ -1,10 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-import Home from './pages/Home';
+import HomePage from './pages/HomePage';
+import AboutUs from './pages/AboutUs'; 
+//NOTE: Login page not showing properly.  
+import ProductCategoryMain from './pages/ProductCategoryMain.js'; 
 import Matchup from './pages/Matchup';
 import Vote from './pages/Vote';
 import NotFound from './pages/NotFound';
+import './App.css'
+import Home from './pages/boiler-Home';
+
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -17,19 +23,27 @@ function App() {
       <Router>
         <div className="flex-column justify-center align-center min-100-vh bg-primary">
           <Routes>
-            <Route 
-              path="/" 
-              element={<Home />}
+            <Route
+              path="/"
+              element={<HomePage />}
             />
-            <Route 
-              path="/matchup" 
+            <Route
+              path="/aboutus"
+              element={<AboutUs />}
+            />
+              <Route
+              path="/productmain"
+              element={<ProductCategoryMain />}
+            />
+            <Route
+              path="/matchup"
               element={<Matchup />}
             />
-            <Route 
-              path="/matchup/:id" 
+            <Route
+              path="/matchup/:id"
               element={<Vote />}
             />
-            <Route 
+            <Route
               path="*"
               element={<NotFound />}
             />
