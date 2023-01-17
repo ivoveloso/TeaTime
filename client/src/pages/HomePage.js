@@ -7,13 +7,13 @@ import React from 'react';
 function HomePage() {
     return (
         <div id="bg-image" style={{ backgroundImage: `url("https://c1.wallpaperflare.com/path/1015/217/316/tea-leaf-china-green-f78462261f295a41b4d8473a4924c0b8.jpg")` }}>
-            <nav class="navbar background">
+            <nav class="navbar background"><br />
                 <ul class="nav-list">
                     <div class="navtabs">
-                    <li><a href="#Shop"><strong> | SHOP </strong></a></li>
-                    <li><a href="#AboutUs"><strong> | ABOUT US  </strong></a></li>
-                    <li><a href="#JoinUS"><strong>|  JOIN US  </strong></a></li>
-                    <li><a href='#ContactUs'><strong>| CONTACT US |</strong></a></li>
+                        <li><a href="#Shop"><strong> | SHOP </strong></a></li>
+                        <li><a href="#AboutUs"><strong> | ABOUT US  </strong></a></li>
+                        <li><a href="#JoinUS"><strong>|  JOIN US  </strong></a></li>
+                        <li><a href='#ContactUs'><strong>| CONTACT US |</strong></a></li>
                     </div>
                 </ul>
 
@@ -41,5 +41,4 @@ function HomePage() {
 }
 
 export default HomePage;
-
 //By Cindy J. 

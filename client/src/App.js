@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import HomePage from './pages/HomePage';
-import AboutUs from './pages/AboutUs'; 
+import AboutUs from './pages/AboutUs';
 //NOTE: Login page not showing properly.  
-import ProductCategoryMain from './pages/ProductCategoryMain.js'; 
+import ProductCategoryMain from './pages/ProductCategoryMain.js';
 import ModernTea from './pages/ModernTea.js';
 import Matchup from './pages/Matchup';
 import Vote from './pages/Vote';
@@ -22,7 +22,8 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className="flex-column justify-center align-center min-100-vh bg-primary">
+        {/* <div className="flex-column justify-center align-center min-100-vh bg-primary"> */}
+        <div style={{height: '100%'}}>
           <Routes>
             <Route
               path="/"
@@ -32,11 +33,11 @@ function App() {
               path="/aboutus"
               element={<AboutUs />}
             />
-              <Route
+            <Route
               path="/productmain"
               element={<ProductCategoryMain />}
             />
-              <Route
+            <Route
               path="/moderntea"
               element={<ModernTea />}
             />

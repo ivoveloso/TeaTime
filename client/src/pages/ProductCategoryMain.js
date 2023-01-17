@@ -2,11 +2,8 @@ import React from 'react';
 
 function ProductCategoryMain() {
     return (
-        <div id="bg-structure">   
-            <div id="bg-productsmain-images"style={{ backgroundImage: `url("")`}}>
-
-            </div>
-            <nav class="navbar background">
+        <div id='bg-productsmain-image' style={{ backgroundImage: `url("https://r4.wallpaperflare.com/wallpaper/496/808/956/kettle-cups-pottery-glassware-wallpaper-928bea95626e79527da698a601f67dab.jpg")` }}>
+            <nav class="navbar background"><br/>
                 <ul class="nav-list">
                     <div class="navtabs">
                         <li><a href="#Shop"><strong> | SHOP </strong></a></li>
@@ -32,10 +29,3 @@ function ProductCategoryMain() {
 }
 export default ProductCategoryMain;
 //By Cindy J.
-// TO DO LIST AS AT 17/01/2022: Work through Slide 1 - 6 
-//  1) Finish the 'Product Category' Main Page 
-//  2) Start & Finish 'Modern Tea Classic' Main Page 
-//  3) Start & Finish the 'Traditional Tea' Main Page 
-//  4) Start & Finish the  Login Page 
-
-// Completed: Slide 1) Homepage & Slide 3) About us Page = 4 slides to go!
