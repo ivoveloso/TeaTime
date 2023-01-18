@@ -1,20 +1,16 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-import HomePage from './pages/HomePage';
-import AboutUs from './pages/AboutUs';
-//NOTE: Login page not showing properly.  
-import ProductCategoryMain from './pages/ProductCategoryMain.js';
-import ModernTea from './pages/ModernTea.js';
-import Matchup from './pages/Matchup';
-import Vote from './pages/Vote';
-import NotFound from './pages/NotFound';
-import './App.css'
-import Home from './pages/boiler-Home';
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import HomePage from "./pages/HomePage";
+import AboutUs from "./pages/AboutUs";
+//NOTE: Login page not showing properly.
+import ProductCategoryMain from "./pages/ProductCategoryMain.js";
+import ModernTea from "./pages/ModernTea.js";
+import NotFound from "./pages/NotFound";
+import "./App.css";
 
 const client = new ApolloClient({
-  uri: '/graphql',
+  uri: "/graphql",
   cache: new InMemoryCache(),
 });
 
@@ -23,36 +19,13 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         {/* <div className="flex-column justify-center align-center min-100-vh bg-primary"> */}
-        <div style={{height: '100%'}}>
+        <div style={{ height: "100%" }}>
           <Routes>
-            <Route
-              path="/"
-              element={<HomePage />}
-            />
-            <Route
-              path="/aboutus"
-              element={<AboutUs />}
-            />
-            <Route
-              path="/productmain"
-              element={<ProductCategoryMain />}
-            />
-            <Route
-              path="/moderntea"
-              element={<ModernTea />}
-            />
-            <Route
-              path="/matchup"
-              element={<Matchup />}
-            />
-            <Route
-              path="/matchup/:id"
-              element={<Vote />}
-            />
-            <Route
-              path="*"
-              element={<NotFound />}
-            />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/productmain" element={<ProductCategoryMain />} />
+            <Route path="/moderntea" element={<ModernTea />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </Router>
