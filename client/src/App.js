@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import HomePage from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
-//NOTE: Login page not showing properly.
 import ProductCategoryMain from "./pages/ProductCategoryMain.js";
 import ModernTea from "./pages/ModernTea.js";
 import NotFound from "./pages/NotFound";

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ProductCategoryMain() {
   return (
@@ -18,19 +19,19 @@ function ProductCategoryMain() {
               </a>
             </li>
             <li>
-              <a href="/aboutus">
-                <strong> | ABOUT US </strong>
-              </a>
+              <Link to="/aboutus">
+                <strong> | ABOUT US </strong>{" "}
+              </Link>
             </li>
             <li>
-              <a href="/moderntea">
-                <strong>| MODERN TEA </strong>
-              </a>
+              <Link to="/moderntea">
+                <strong> | MODERN TEA </strong>{" "}
+              </Link>
             </li>
             <li>
-              <a href="/productmain">
-                <strong>| PRODUCTS |</strong>
-              </a>
+              <Link to="/productmain">
+                <strong> | PRODUCTS </strong>{" "}
+              </Link>
             </li>
           </div>
         </ul>
@@ -46,16 +47,16 @@ function ProductCategoryMain() {
         </div>
       </nav>
       <div>
-        <a href="/">
+        <Link to="/">
           <button class="btn-2">
             <strong>TRADITIONAL</strong>
           </button>
-        </a>
-        <a href="/moderntea">
+        </Link>
+        <Link to="/moderntea">
           <button class="btn-2">
             <strong>MODERN TEA</strong>
           </button>
-        </a>
+        </Link>
       </div>
       <footer className="footer">
         <i>

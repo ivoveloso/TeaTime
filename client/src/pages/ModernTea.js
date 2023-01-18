@@ -1,4 +1,5 @@
-import react from "react";
+// import react from "react";
+import { Link } from "react-router-dom";
 
 function ModernTea() {
   return (
@@ -18,19 +19,19 @@ function ModernTea() {
               </a>
             </li>
             <li>
-              <a href="/aboutus">
-                <strong> | ABOUT US </strong>
-              </a>
+              <Link to="/aboutus">
+                <strong> | ABOUT US </strong>{" "}
+              </Link>
             </li>
             <li>
-              <a href="/moderntea">
-                <strong>| MODERN TEA </strong>
-              </a>
+              <Link to="/moderntea">
+                <strong> | MODERN TEA </strong>{" "}
+              </Link>
             </li>
             <li>
-              <a href="/productmain">
-                <strong>| PRODUCTS |</strong>
-              </a>
+              <Link to="/productmain">
+                <strong> | PRODUCTS </strong>{" "}
+              </Link>
             </li>
           </div>
         </ul>
@@ -47,19 +48,31 @@ function ModernTea() {
         <div class="modernTeaitems">
           <div class="tea-card" id="card1">
             <h5>ROSÉ RENDEZVOUS</h5>
-            <img src="https://www.ohhowcivilized.com/wp-content/uploads/rose-tea-5.jpg"></img>
+            <img
+              alt="tea"
+              src="https://www.ohhowcivilized.com/wp-content/uploads/rose-tea-5.jpg"
+            ></img>
           </div>
           <div class="tea-card" id="card2">
             <h5>CHRYSANTHEMUM SAMURAI</h5>
-            <img src="https://cdn.shopify.com/s/files/1/0116/6009/9641/articles/chrysanthemum-tea-benefits_600x600_crop_center.jpg?v=1659037062"></img>
+            <img
+              alt="tea"
+              src="https://cdn.shopify.com/s/files/1/0116/6009/9641/articles/chrysanthemum-tea-benefits_600x600_crop_center.jpg?v=1659037062"
+            ></img>
           </div>
           <div class="tea-card" id="card3">
             <h5>LAVENDER DREAM</h5>
-            <img src="https://cdn.shopify.com/s/files/1/0399/9603/1142/products/blackleaves-OrganicLavender-min_1024x.jpg?v=1639616957"></img>
+            <img
+              alt="tea"
+              src="https://cdn.shopify.com/s/files/1/0399/9603/1142/products/blackleaves-OrganicLavender-min_1024x.jpg?v=1639616957"
+            ></img>
           </div>
           <div class="tea-card" id="card4">
             <h5>SWEET OSMANTHUS</h5>
-            <img src="https://cdn.shopify.com/s/files/1/0270/5620/9989/products/10_37c72971-1e65-4dac-8a52-84d02402d7ed.jpg?v=1592138882"></img>
+            <img
+              alt="tea"
+              src="https://cdn.shopify.com/s/files/1/0270/5620/9989/products/10_37c72971-1e65-4dac-8a52-84d02402d7ed.jpg?v=1592138882"
+            ></img>
           </div>
         </div>
         <footer className="footer">

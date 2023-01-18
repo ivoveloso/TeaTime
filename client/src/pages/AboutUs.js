@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // import { chakra } from "@chakra-ui/react"; //Still need to fix this.
 // TO DO: Need to link both About us page & Login Page properly with CSS.
 
@@ -21,19 +21,19 @@ function AboutUs() {
               </a>
             </li>
             <li>
-              <a href="/aboutus">
-                <strong> | ABOUT US </strong>
-              </a>
+              <Link to="/aboutus">
+                <strong> | ABOUT US </strong>{" "}
+              </Link>
             </li>
             <li>
-              <a href="/moderntea">
-                <strong>| MODERN TEA </strong>
-              </a>
+              <Link to="/moderntea">
+                <strong> | MODERN TEA </strong>{" "}
+              </Link>
             </li>
             <li>
-              <a href="/productmain">
-                <strong>| PRODUCTS |</strong>
-              </a>
+              <Link to="/productmain">
+                <strong> | PRODUCTS </strong>{" "}
+              </Link>
             </li>
           </div>
         </ul>

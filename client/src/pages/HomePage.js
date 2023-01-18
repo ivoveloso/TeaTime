@@ -1,6 +1,7 @@
 //This is Version 2 using the Chakura UI - npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 //Logo to be located on the side panel
 import React from "react";
+import { Link } from "react-router-dom";
 // import { chakra } from "@chakra-ui/react";
 //TO DO: Generating a Welcome Pop up card.
 
@@ -22,19 +23,19 @@ function HomePage() {
               </a>
             </li>
             <li>
-              <a href="/aboutus">
-                <strong> | ABOUT US </strong>
-              </a>
+              <Link to="/aboutus">
+                <strong> | ABOUT US </strong>{" "}
+              </Link>
             </li>
             <li>
-              <a href="/moderntea">
-                <strong>| MODERN TEA </strong>
-              </a>
+              <Link to="/moderntea">
+                <strong> | MODERN TEA </strong>{" "}
+              </Link>
             </li>
             <li>
-              <a href="/productmain">
-                <strong>| PRODUCTS |</strong>
-              </a>
+              <Link to="/productmain">
+                <strong> | PRODUCTS </strong>{" "}
+              </Link>
             </li>
           </div>
         </ul>
