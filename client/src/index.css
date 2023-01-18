@@ -19,6 +19,7 @@ html {
  */
 body {
   margin: 0;
+  height: 100%;
 }
 
 /**
@@ -453,7 +454,7 @@ a:hover {
 }
 
 .min-100-vh {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .min-100-vw {
